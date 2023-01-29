@@ -216,6 +216,7 @@
   .icon-list {
     width: 70px;
   }
+  
 
   .texti-background-down-cards {
     flex-wrap: wrap;
@@ -225,7 +226,23 @@
   .texti-background-top-content h3 {
     font-size: 20px;
   }
+
+  .top-article{
+    flex-wrap: wrap;
+    gap: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.left-cont h2{
+  font-size: 25px;
 }
+
+
+}
+
+
+
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (min-width: 320px) and (max-width: 575.98px) {
@@ -414,6 +431,17 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .top-article{
+    flex-wrap: wrap;
+    gap: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.left-cont h2{
+  font-size: 30px;
+}
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -542,6 +570,13 @@
       justify-content: center;
     }
 
+    .top-article{
+      flex-wrap: wrap;
+      gap: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
 }
 
