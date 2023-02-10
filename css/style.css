@@ -259,7 +259,6 @@
 .bar-p::before {
   content: "";
   position: absolute;
-  margin-left: 30px;
   z-index: -1;
   left: 0;
   top: -2.7px;
@@ -267,6 +266,15 @@
   width: 10px;
   border-radius: 50%;
   background: #0c5adb;
+  animation: move 2s linear infinite;
+}
+
+.bar-p:hover::before{
+  @keyframes move  {
+  to{
+    transform: translateX(30px);
+  }
+}
 }
 
 .about-right p {
@@ -275,6 +283,8 @@
   font-weight: 700;
   margin-bottom: 30px;
 }
+
+
 
 .flex-box-a {
   display: flex;
@@ -533,7 +543,7 @@
   width: 10px;
   border-radius: 50%;
   background: #0c5adb;
-  animation: top 2s infinite ease-in-out;
+  animation: top 2s linear infinite ;
 }
 
 @keyframes top{
@@ -1167,7 +1177,7 @@ color: #222;
     width: 10px;
     border-radius: 50%;
     background: #0c5adb;
-animation:  move 3s infinite ease-in-out;
+animation:  move 3s linear infinite ;
 }
 
 @keyframes move {
@@ -1274,7 +1284,7 @@ color: #fff;
 /* texti-background-end */
 
 
-/*  */
+/*article-background-start*/
 
 .article-background{
   height: auto;
@@ -1287,6 +1297,7 @@ color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 100px;
 }
 
 .left-cont h4{
@@ -1379,8 +1390,80 @@ transform: scale(0);
   color: #fff;
 }
 
-
 /*  */
+
+.down-article{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-flexbox{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.card-edit{
+  /* height: 600px !important; */
+  width: 300px !important;
+  /* position: relative; */
+  transition: all 0.5s ease-in-out ;
+  overflow: hidden;
+}
+
+.card-edit:hover{
+  transform: translateY(-30px);
+}
+
+.card-edit:hover .socia-media{
+margin-right: 200px;
+}
+
+
+
+.card-body-box{
+  display: flex;
+align-items: center;
+justify-content: center;
+/* border-radius: 5px; */
+margin-top: -110px;
+margin-left: 300px;
+transition: all 0.5s ease-in-out ;
+
+}
+
+.socia-media{
+  width: 40px;
+  height: 130px;
+  background: #ffff;
+  padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+font-size: 20px;
+gap: 0.5em;
+color: #0c5adb;
+transition: all 0.5s ease-in-out ;
+position: absolute;
+
+}
+
+.socia-media i{
+  cursor: pointer;
+}
+
+.socia-media i:hover{
+  color: #00247e;
+}
+
+
+
+
+
+
+/*  article-background-end*/
 
 
 
