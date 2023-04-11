@@ -1409,7 +1409,7 @@ transform: scale(0);
  width: 300px;
   transition: all 0.5s ease-in-out ;
   position: relative;
-  box-shadow: 0px 10px 20px #ccc;
+  /* box-shadow: 0px 10px 20px #ccc; */
   border-bottom: 2px solid #00247E;
   overflow: hidden;
   border-radius: 10px;
@@ -1417,23 +1417,30 @@ transform: scale(0);
 
 .card-img-top{
   transition: all 0.5s ease-in-out ;
-height: 310px;
+height: 280px;
 }
+
+
 
 .card-a:hover .card-img-top{
   transform: scale(1.08);
+  background: #0c5adb !important;
 }
 
 .card-a:hover .socia-media{ 
-  transform: translateX(-130px);
+  transform: translateX(-200px);
 }
+
+
 
 
 .socia-media{
   display: flex;
-  /* align-items: center; */
+  align-items: center;
+  justify-content: center;
   /* gap: 0.01em; */
   flex-direction: column;
+  padding-right: 13px;
 position: absolute;
 margin-top: -240px;
 margin-left: 370px;
@@ -1447,6 +1454,7 @@ transition: all 0.5s ease-in-out ;
 color: #0c5adb;
 text-align: left;
 /* margin-left: -10px; */
+cursor: pointer;
 margin-top: 10px;
 font-size: 18px;
 }
